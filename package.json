@@ -1,0 +1,12 @@
+{
+  "name": "notion_to_word",
+  "version": "1.0.0",
+  "description": "convert notion to word by using javascript api",
+  "main": "index.js",
+  "repository": "https://github.com/bn3monkey/notion_to_word",
+  "author": "bn3monkey <bn3monkey@naver.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@notionhq/client": "^0.2.0"
+  }
+}
