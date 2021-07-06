@@ -5,4 +5,10 @@
 
 # 3. yarn init
 
-4. yarn add @notionhq/client
+# 4. install express
+yarn add express
+
+# 5. install notion client 
+yarn add @notionhq/client
+
+5. 

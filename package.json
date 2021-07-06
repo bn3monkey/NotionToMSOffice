@@ -7,6 +7,7 @@
   "author": "bn3monkey <bn3monkey@naver.com>",
   "license": "MIT",
   "dependencies": {
-    "@notionhq/client": "^0.2.0"
+    "@notionhq/client": "^0.2.0",
+    "express": "^4.17.1"
   }
 }
