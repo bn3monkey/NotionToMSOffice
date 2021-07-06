@@ -4,8 +4,10 @@ class HansonoDoc
     private notion;
 
     constructor() {
-        const tokenFile : any = require("./lib/token/token.json");
-        const token : string = tokenFile["token"];
+        const fs = require('fs')
+        const tokenFile : any = fs.readFileSync("./lib/token/token.json");
+        const tokenObject : JSON = JSON.parse(tokenFile)
+        const token : string = tokenObject["token"];
         const { Client } = require('@notionhq/client');
         this.notion = new Client({auth : token});
     }
@@ -19,6 +21,7 @@ class HansonoDoc
 const hansonoDoc = new HansonoDoc();
 
 (async() => {
-    const response = hansonoDoc.access().databases.list();
+    const response = await hansonoDoc.access.databases.list();
     console.log(response);
-})
+    console.log(response);
+})();
