@@ -8,7 +8,9 @@
 # 4. install express
 yarn add express
 
+# 5. install typescript
+npm install -g typescript
+npm upgrade typescript
+
 # 5. install notion client 
 yarn add @notionhq/client
-
-5. 
